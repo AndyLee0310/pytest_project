@@ -9,6 +9,6 @@ html_report_path = os.path.join(current_path, 'report/html')
 
 if __name__ == '__main__':
     
-    pytest.main()
-# pytest.main(['-s', '-v', '--alluredir', json_report_path, '--clean-alluredir'])
-# os.system(f'allure generate {json_report_path} -o {html_report_path} --clean')
+    # pytest.main()
+    pytest.main(['-v'])
+    os.system(f'allure generate {json_report_path} -o {html_report_path} --clean')

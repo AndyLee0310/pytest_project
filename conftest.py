@@ -3,8 +3,7 @@ from appium.options.common import AppiumOptions
 
 @pytest.fixture(scope='session')
 def android_setting():
-    PORT = '4723'
-    NO_RESET = 'False'
+    NO_RESET =  False
 
     options = AppiumOptions()
     options.set_capability('platformName', 'Android')

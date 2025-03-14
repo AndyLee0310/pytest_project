@@ -1,1 +1,0 @@
-{"ac8f9fd0fffacc92d112285b3456d4a5":{"statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"70cb31fdd5d2ae2e","status":"broken","statusDetails":"AttributeError: 'NoneType' object has no attribute 'to_capabilities'","time":{"start":1741967056157,"stop":1741967056157,"duration":0}}]}}
