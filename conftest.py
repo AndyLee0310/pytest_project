@@ -1,16 +1,19 @@
 import pytest
+from appium.options.common import AppiumOptions
 
 @pytest.fixture(scope='session')
 def android_setting():
-    options = {
-        'platformName': 'Android',
-        'appium:platformVersion': '14',
-        'appium:deviceName': 'CN48E3M00036',
-        'appium:automationName': 'uiautomator2',
-        'appium:appPackage': 'com.google.android.calculator',
-        'appium:appActivity': 'com.android.calculator2.Calculator',
-        'noReset': False,
-    }
+    PORT = '4723'
+    NO_RESET = 'False'
+
+    options = AppiumOptions()
+    options.set_capability('platformName', 'Android')
+    options.set_capability('platformVersion', '14')
+    options.set_capability('deviceName', 'CN48E3M00036')
+    options.set_capability('automationName', 'uiautomator2')
+    options.set_capability('appPackage', 'com.google.android.calculator')
+    options.set_capability('appActivity', 'com.android.calculator2.Calculator')
+    options.set_capability('noReset', NO_RESET)
     return options
 
 # @pytest.fixture(scope='function')

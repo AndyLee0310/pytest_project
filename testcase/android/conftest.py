@@ -2,7 +2,6 @@ import logging
 import time
 import pytest
 from appium import webdriver
-from appium.options.common import AppiumOptions
 
 driver = None
 
